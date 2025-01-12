@@ -55,22 +55,30 @@ The string `"101"` does not appear in `nums`. Other valid outputs include `"000"
 
 Follow these steps to complete the activity:
 
-1. **Fork the Repository:**  
-   Fork the `algorithmic-exercises` repository to your own GitHub account.
 
-2. **Keep Relevant Directory:**  
-   Retain only the `find_unique_binary_string` directory. Delete all other directories and files in the repository.
+1. **Fork the Repository:**
+   - Fork the [algorithmic-exercises](https://github.com/nps-dev/algorithmic-exercises/tree/main) repository to your own GitHub account. 
+   - Name your fork `find_unique_binary_string`.
 
-3. **Initialize Git:**  
-   Turn the `find_unique_binary_string` directory into a Git repository by running:
-   ```bash
-   git init
-   ```
+2. **Organize the Repository:**
+   - Locate and delete the README file already present in the root directory of the repository:
+     ```bash
+     rm README.md
+     ```
+   - Navigate to the `find_unique_binary_string` directory within the repository.
+   - Move the contents of the `find_unique_binary_string` directory to the **root directory**:
+     ```bash
+     mv find_unique_binary_string/* .
+     ```
+   - Delete the now-empty `find_unique_binary_string` folder:
+     ```bash
+     rmdir find_unique_binary_string
+     ```
 
-4. **Solve the Problem:**  
+3. **Solve the Problem:**  
    Open the `find_unique_binary_string.py` file in the `find_unique_binary_string` directory and implement your solution. Ensure your code complies with all `TODO` comments within the file.
 
-5. **Submit Your Solution:**  
+4. **Submit Your Solution:**  
    Commit your changes and push your solution to your GitHub repository.
 
 ---
@@ -78,6 +86,5 @@ Follow these steps to complete the activity:
 ## Additional Notes
 
 - **Reference Problem:** [Find Unique Binary String](https://leetcode.com/problems/find-unique-binary-string/description/)
-- Feel free to ask for help if you're stuck!
 
 Happy coding! 🚀
